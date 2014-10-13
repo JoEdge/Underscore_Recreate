@@ -15,26 +15,21 @@ console.log(newNum); */
 
 // .reduce() - reduce boils down a list of values into a single value.
 
-function sumAll() {
-    var i, sum = 0;
-    for(i = 0; i < arguments.length; i++) {
-        sum += arguments[i];
-    }
-    return sum;
-}
 
 // .size() - Return the number of values in the list.
 
 var joanna = {};
 
-function size (joanna) {
+joanna.size = function (list) {
 
-  if (joanna === null) {
+  if (list == null) {
 
       return 0;
+}
 
-} else
+else {
 
-  return joanna.length;
+   return list.length;
+}
 
 };
