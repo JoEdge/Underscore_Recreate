@@ -35,12 +35,15 @@ joanna.empty = function (items) {
   }
 };
 
-//without - Return a version of the array that does not contain the specified value(s)
+//min - Returns the minimum value in list.
+
+joanna.min = function (list){
+    return Math.min.apply ( Math, list);
+};
 
 
-  joanna.without = function(array) {
+//max - Returns the maximum value in list.
 
-    for (i=0; i<array.lengt; i++)
-
-    return array.slice([begin, [end]]);
-  };
+joanna.max = function (list) {
+    return Math.max.apply (Math, list);
+};
