@@ -33,7 +33,14 @@ joanna.empty = function (items) {
   } else {
       return false;
   }
-
 };
 
-//
+//without - Return a version of the array that does not contain the specified value(s)
+
+
+  joanna.without = function(array) {
+
+    for (i=0; i<array.lengt; i++)
+
+    return array.slice([begin, [end]]);
+  };
