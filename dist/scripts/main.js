@@ -12,10 +12,6 @@ var newNum = [];
 
 console.log(newNum); */
 
-
-// .reduce() - reduce boils down a list of values into a single value.
-
-
 // .size() - Return the number of values in the list.
 
 var joanna = {};
@@ -23,13 +19,21 @@ var joanna = {};
 joanna.size = function (list) {
 
   if (list == null) {
-
       return 0;
+} else {
+  return list.length;
 }
+};
 
-else {
+//isEmpty Returns true if an enumerable object contains no values
 
-   return list.length;
-}
+joanna.empty = function (items) {
+  if (items === null) {
+      return true;
+  } else {
+      return false;
+  }
 
 };
+
+//
