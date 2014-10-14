@@ -1,17 +1,3 @@
-// .map() - creates a new array
-
-/*var num = [1, 2, 3, 4, 5];
-
-var newNum = [];
-
-  for (var i=0; i < num.length; i++) {
-
-    newNum.push(num[i] * 5);
-
-};
-
-console.log(newNum); */
-
 // .size() - Return the number of values in the list.
 
 var joanna = {};
@@ -37,13 +23,25 @@ joanna.empty = function (items) {
 
 //min - Returns the minimum value in list.
 
-joanna.min = function (list){
-    return Math.min.apply ( Math, list);
-};
 
+joanna.min = function (list) {
+
+  for (var i=0; i<1; i++) {
+    list.sort();
+}
+  return list[0];
+
+};
 
 //max - Returns the maximum value in list.
 
-joanna.max = function (list) {
-    return Math.max.apply (Math, list);
+joanna.max = function () {
+
+var most = this[0];
+var len = this.length;
+
+for (var i = 1; i < len; i++) {
+  if (this[i] > most) most = this[i];
+}
+return most;
 };
