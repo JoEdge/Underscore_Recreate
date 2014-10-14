@@ -24,24 +24,12 @@ joanna.empty = function (items) {
 //min - Returns the minimum value in list.
 
 
-joanna.min = function (list) {
-
-  for (var i=0; i<1; i++) {
-    list.sort();
-}
-  return list[0];
-
+joanna.min = function (list){
+    return Math.min.apply ( Math, list);
 };
 
 //max - Returns the maximum value in list.
 
-joanna.max = function () {
-
-var most = this[0];
-var len = this.length;
-
-for (var i = 1; i < len; i++) {
-  if (this[i] > most) most = this[i];
-}
-return most;
+joanna.max = function (list) {
+    return Math.max.apply (Math, list);
 };
