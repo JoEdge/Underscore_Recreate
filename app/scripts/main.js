@@ -1,4 +1,4 @@
-// .size() - Return the number of values in the list.
+// .size() - Return the number of items in the list.
 
 var joanna = {};
 
@@ -11,7 +11,7 @@ joanna.size = function (list) {
 }
 };
 
-//isEmpty Returns true if an enumerable object contains no values
+//isEmpty Returns true if object contains no values
 
 joanna.empty = function (items) {
   if (items == null) return true;
